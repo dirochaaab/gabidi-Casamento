@@ -224,20 +224,20 @@ function addFamilyMember(name='',isChild=false,drinks=false){
   const div = document.createElement('div');
   div.className='family-input';
   div.style.cssText='background:rgba(20,12,16,0.6);border:1px solid rgba(160,100,50,0.2);border-radius:10px;padding:10px 12px;margin-bottom:8px;';
-  div.innerHTML=\`<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-    <input class="minput fam-name" placeholder="Nome do familiar" value="\${name}" style="flex:1;margin:0;">
+  div.innerHTML=`<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+    <input class="minput fam-name" placeholder="Nome do familiar" value="${name}" style="flex:1;margin:0;">
     <button onclick="this.parentElement.parentElement.remove()" style="background:rgba(200,80,80,0.15);border:1px solid rgba(200,80,80,0.3);color:#e08080;border-radius:8px;padding:6px 10px;cursor:pointer;font-size:.8rem;flex-shrink:0;">✕</button>
   </div>
   <div style="display:flex;gap:20px;">
     <label style="display:flex;align-items:center;gap:8px;font-size:.78rem;color:#9a8060;cursor:pointer;">
-      <div class="toggle-wrap"><input type="checkbox" class="fam-child toggle-input" \${isChild?'checked':''}><span class="toggle-slider"></span></div>
+      <div class="toggle-wrap"><input type="checkbox" class="fam-child toggle-input" ${isChild?'checked':''}><span class="toggle-slider"></span></div>
       Criança?
     </label>
     <label style="display:flex;align-items:center;gap:8px;font-size:.78rem;color:#9a8060;cursor:pointer;">
-      <div class="toggle-wrap"><input type="checkbox" class="fam-drinks toggle-input" \${drinks?'checked':''}><span class="toggle-slider"></span></div>
+      <div class="toggle-wrap"><input type="checkbox" class="fam-drinks toggle-input" ${drinks?'checked':''}><span class="toggle-slider"></span></div>
       Bebe Álcool?
     </label>
-  </div>\`;
+  </div>`;
   wrap.appendChild(div);
 }
 
@@ -295,18 +295,18 @@ function addGpFamilyMember(name='',isChild=false,drinks=false){
   const div=document.createElement('div');
   div.className='family-input';
   div.style.cssText='background:rgba(20,12,16,0.6);border:1px solid rgba(160,100,50,0.2);border-radius:10px;padding:10px 12px;margin-bottom:8px;';
-  div.innerHTML=\`<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-    <input class="minput fam-name" placeholder="Nome do familiar" value="\${name}" style="flex:1;margin:0;">
+  div.innerHTML=`<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+    <input class="minput fam-name" placeholder="Nome do familiar" value="${name}" style="flex:1;margin:0;">
     <button onclick="this.parentElement.parentElement.remove()" style="background:rgba(200,80,80,0.15);border:1px solid rgba(200,80,80,0.3);color:#e08080;border-radius:8px;padding:6px 10px;cursor:pointer;font-size:.8rem;">✕</button>
   </div>
   <div style="display:flex;gap:20px;">
     <label style="display:flex;align-items:center;gap:8px;font-size:.78rem;color:#9a8060;cursor:pointer;">
-      <div class="toggle-wrap"><input type="checkbox" class="fam-child toggle-input" \${isChild?'checked':''}><span class="toggle-slider"></span></div>Criança?
+      <div class="toggle-wrap"><input type="checkbox" class="fam-child toggle-input" ${isChild?'checked':''}><span class="toggle-slider"></span></div>Criança?
     </label>
     <label style="display:flex;align-items:center;gap:8px;font-size:.78rem;color:#9a8060;cursor:pointer;">
-      <div class="toggle-wrap"><input type="checkbox" class="fam-drinks toggle-input" \${drinks?'checked':''}><span class="toggle-slider"></span></div>Bebe Álcool?
+      <div class="toggle-wrap"><input type="checkbox" class="fam-drinks toggle-input" ${drinks?'checked':''}><span class="toggle-slider"></span></div>Bebe Álcool?
     </label>
-  </div>\`;
+  </div>`;
   wrap.appendChild(div);
 }
 
